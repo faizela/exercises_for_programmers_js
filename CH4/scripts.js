@@ -61,34 +61,41 @@ switch(numMonth) {
 // exercise 23 
 
 
+
+
 let askCarSilent = prompt("Is the car silent when you turn the key? - answer in y or n")
 
+function carSilentNo () {
+
+  let askClickNoise = prompt("Does the car make a clicking noise?") 
+  if (askClickNoise.toLowerCase() === 'y') {
+      alert('replace the battery')
+  }
+  else if (askClickNoise.toLowerCase() === 'n') {
+          let askCrankup = prompt("Does the car crank up but fail to start?") 
+          if (askCrankup.toLowerCase() === 'n') {
+              let askEngine = prompt("Does the engine start and then die")
+              if (askEngine.toLowerCase() === 'y') {
+                  let askFuel = prompt("Does your car have fuel injection?")
+                  if (askFuel.toLowerCase() === 'y') {
+                      alert("Get it in for service")
+                  }
+                  else if (askFuel.toLowerCase() === 'n') {
+                      alert('Check to ensure the choke is opening and closing.')
+                  } 
+              }
+          }
+          habitgoaltracker
+
+          intrasoft
+          
+          com.intrasoft
+      } 
+  }   
+  
 
 if (askCarSilent.toLowerCase() === 'n') {
-
-  return function carSilentNo () {
-
-let askClickNoise = prompt("Does the car make a clicking noise?") 
-if (askClickNoise.toLowerCase() === 'y') {
-    alert('replace the battery')
-}
-else if (askClickNoise.toLowerCase() === 'n') {
-        let askCrankup = prompt("Does the car crank up but fail to start?") 
-        if (askCrankup.toLowerCase() === 'n') {
-            let askEngine = prompt("Does the engine start and then die")
-            if (askEngine.toLowerCase() === 'y') {
-                let askFuel = prompt("Does your car have fuel injection?")
-                if (askFuel.toLowerCase() === 'y') {
-                    alert("Get it in for service")
-                }
-                else if (askFuel.toLowerCase() === 'n') {
-                    alert('Check to ensure the choke is opening and closing.')
-                } 
-            }
-        }
-
-    } 
-}   
+  carSilentNo()
 
 }
 

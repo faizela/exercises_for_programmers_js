@@ -5,7 +5,7 @@
 
 
 // let AskRate = prompt('What is the Rate? # give percentage number');
-// let Rate = parseFloat(AskRate)
+// let Rate = parseFloat(AskRate)Q
 
 // let RateDiv = (Rate / 100)  // try without dividing see how wrong the number is 
 
